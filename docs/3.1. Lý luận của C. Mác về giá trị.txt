@@ -1,0 +1,59 @@
+3.1. Lý luận của C. Mác về giá trị thặng dư
+3.1.1. Nguồn gốc của giá trị thặng dư
+Lý thuyết
+Theo C. Mác, giá trị thặng dư là phần giá trị mới do người lao động tạo ra vượt quá giá trị sức lao động của họ và bị nhà tư bản chiếm hữu không công.
+Trong quá trình sản xuất:
+Người lao động bán sức lao động cho nhà tư bản.
+Nhà tư bản trả tiền lương tương ứng với giá trị sức lao động.
+Tuy nhiên, trong thời gian lao động, người công nhân tạo ra giá trị lớn hơn giá trị tiền lương được trả.
+Khoản chênh lệch đó chính là giá trị thặng dư.
+Áp dụng vào Alpha Corp
+Trong dự án khu đô thị ven biển:
+Alpha Corp thuê hàng nghìn công nhân xây dựng.
+Công nhân nhận tiền lương theo hợp đồng lao động.
+Trong quá trình thi công, họ tạo ra giá trị mới thông qua việc xây dựng các tòa tháp.
+Phần giá trị mới vượt quá chi phí tiền lương trở thành nguồn gốc của giá trị thặng dư mà Alpha Corp kỳ vọng thu được khi bán căn hộ.
+Kết luận
+Nguồn gốc của giá trị thặng dư trong dự án Alpha Corp xuất phát từ sức lao động của công nhân xây dựng chứ không phải từ máy móc hay tiền vốn.
+
+3.1.2. Bản chất của giá trị thặng dư
+Lý thuyết
+Theo Mác, bản chất của giá trị thặng dư là phần lao động không được trả công của người lao động.
+Trong quá trình sản xuất:
+Một phần thời gian lao động dùng để tạo ra giá trị tương ứng với tiền lương.
+Phần thời gian còn lại tạo ra giá trị thặng dư cho nhà tư bản.
+Đây là cơ sở hình thành lợi nhuận trong nền kinh tế tư bản chủ nghĩa.
+Áp dụng vào Alpha Corp
+Trong quá trình xây dựng:
+Công nhân tạo ra giá trị mới cho các công trình.
+Alpha Corp thanh toán tiền lương theo hợp đồng.
+Giá trị tạo ra từ công trình hoàn thành lớn hơn tổng tiền lương đã trả.
+Khoản chênh lệch này chính là cơ sở để doanh nghiệp thu lợi nhuận sau khi bán sản phẩm bất động sản.
+Kết luận
+Giá trị thặng dư mà Alpha Corp mong muốn thu được bắt nguồn từ phần giá trị mới do người lao động tạo ra vượt quá giá trị sức lao động của họ.
+
+3.1.3. Các phương pháp sản xuất giá trị thặng dư
+Lý thuyết
+C. Mác chỉ ra hai phương pháp cơ bản:
+Giá trị thặng dư tuyệt đối
+Được tạo ra bằng cách kéo dài thời gian lao động trong khi tiền lương không tăng tương ứng.
+Giá trị thặng dư tương đối
+Được tạo ra bằng cách nâng cao năng suất lao động, làm giảm thời gian lao động tất yếu và tăng thời gian lao động thặng dư.
+Áp dụng vào Alpha Corp
+Giá trị thặng dư tuyệt đối
+Để đẩy nhanh tiến độ:
+Công nhân tăng ca.
+Làm việc ngoài giờ.
+Thi công liên tục.
+Điều này làm tăng lượng giá trị thặng dư thu được.
+Giá trị thặng dư tương đối
+Alpha Corp đầu tư:
+Máy móc hiện đại.
+Công nghệ BIM.
+Phần mềm quản lý xây dựng.
+Nhờ đó năng suất lao động tăng lên, giúp giảm chi phí và tăng lợi nhuận.
+Kết luận
+Alpha Corp sử dụng kết hợp cả hai phương pháp nhằm tối đa hóa giá trị thặng dư trong quá trình xây dựng dự án.
+
+
+

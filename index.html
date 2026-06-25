@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Escape Room: Giải cứu Alpha Corp — Web học tập Chương 3: Giá trị thặng dư trong nền kinh tế thị trường">
+    <title>Escape Room: Giải cứu Alpha Corp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Presentation Mode Toggle -->
+    <button id="presentation-toggle" title="Chế độ thuyết trình">🖥️</button>
+
+    <!-- Intro Screen -->
+    <section id="intro-screen" class="screen">
+        <!-- Rendered by app.js from INTRO_DATA -->
+    </section>
+
+    <!-- Room Screen -->
+    <section id="room-screen" class="screen hidden">
+        <header id="room-header">
+            <!-- Progress bar + Room title — rendered by app.js -->
+        </header>
+        <main id="room-content">
+            <!-- Cards (theory, case, question, result) — rendered by app.js -->
+        </main>
+    </section>
+
+    <!-- Ending Screen -->
+    <section id="ending-screen" class="screen hidden">
+        <!-- Rendered by app.js from ENDING_DATA -->
+    </section>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

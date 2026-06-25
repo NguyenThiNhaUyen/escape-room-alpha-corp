@@ -1,0 +1,107 @@
+3.3. Các hình thức biểu hiện của giá trị thặng dư trong nền kinh tế thị trường
+3.3.1. Lợi nhuận
+Lý thuyết
+Theo C. Mác, trong nền kinh tế thị trường tư bản chủ nghĩa, giá trị thặng dư sau khi được tạo ra trong quá trình sản xuất sẽ biểu hiện ra bên ngoài dưới hình thức lợi nhuận.
+Công thức:
+Giá trị hàng hóa = Chi phí sản xuất + Lợi nhuận
+Nhà tư bản không nhìn thấy giá trị thặng dư như một phần lao động không được trả công của công nhân, mà nhìn thấy nó dưới dạng khoản tiền chênh lệch giữa doanh thu bán hàng và tổng chi phí bỏ ra.
+Nói cách khác:
+Người lao động tạo ra giá trị mới trong quá trình sản xuất.
+Nhà tư bản trả tiền lương cho sức lao động.
+Sau khi bán sản phẩm, phần giá trị còn lại sau khi trừ chi phí trở thành lợi nhuận.
+Áp dụng vào Alpha Corp
+Trong dự án khu đô thị ven biển:
+Alpha Corp vay ngân hàng 10.000 tỷ đồng.
+Công ty dùng vốn để mua đất, thuê máy móc, thuê nhân công xây dựng 3 tòa tháp.
+Công nhân tạo ra giá trị mới thông qua quá trình xây dựng.
+Nếu thị trường thuận lợi:
+Ví dụ:
+Tổng chi phí xây dựng: 10.000 tỷ đồng.
+Bán căn hộ thu về: 15.000 tỷ đồng.
+Khoản chênh lệch 5.000 tỷ đồng chính là nguồn lợi nhuận mà Alpha Corp thu được.
+Tuy nhiên, trong tình huống thị trường đóng băng:
+3 tòa tháp không bán được.
+Giá trị mới tạo ra chưa được thực hiện trên thị trường.
+Alpha Corp không thu được lợi nhuận để trả lãi ngân hàng và tiếp tục sản xuất.
+
+Kết luận
+Lợi nhuận của Alpha Corp là hình thức biểu hiện bên ngoài của giá trị thặng dư. Nhưng để giá trị thặng dư trở thành lợi nhuận, sản phẩm phải được bán trên thị trường.
+3.3.2. Lợi tức
+Lý thuyết
+Trong nền kinh tế thị trường, nhiều nhà tư bản sử dụng vốn vay để mở rộng sản xuất.
+Khi đó:
+Người cho vay cung cấp tư bản tiền tệ.
+Người đi vay sử dụng vốn để sản xuất kinh doanh.
+Một phần giá trị thặng dư thu được được chia cho người cho vay dưới dạng lợi tức.
+Lợi tức là phần lợi nhuận mà nhà tư bản đi vay phải trả cho chủ sở hữu vốn.
+Áp dụng vào Alpha Corp
+Alpha Corp vay ngân hàng:
+10.000 tỷ đồng
+Khoản vay này trở thành nguồn vốn để:
+mua đất,
+xây dựng dự án,
+thuê lao động,
+mua nguyên vật liệu.
+Nếu dự án thành công:
+Alpha Corp bán được căn hộ.
+Thu được lợi nhuận.
+Dùng một phần lợi nhuận để trả lãi ngân hàng.
+Tuy nhiên khi thị trường đóng băng:
+Không bán được sản phẩm.
+Không tạo ra dòng tiền.
+Không có khả năng trả lãi.
+Điều này khiến quá trình tuần hoàn tư bản bị gián đoạn.
+Kết luận
+Trong trường hợp Alpha Corp, lợi tức ngân hàng chính là phần giá trị được trích ra từ lợi nhuận mà doanh nghiệp kỳ vọng tạo ra trong tương lai.
+3.3.2 Lợi tức
+Lý thuyết
+Trong nền kinh tế thị trường, nhiều nhà tư bản sử dụng vốn vay để mở rộng sản xuất
+Khi đó:
+Người cho vay cung cấp tư bản tiền tệ.
+Người đi vay sử dụng vốn để sản xuất kinh doanh.
+Một phần giá trị thặng dư thu được được chia cho người cho vay dưới dạng lợi tức.
+Lợi tức là phần lợi nhuận mà nhà tư bản đi vay phải trả cho chủ sở hữu vốn.
+Áp dụng vào Alpha Corp
+
+Alpha Corp vay ngân hàng:
+10.000 tỷ đồng
+Khoản vay này trở thành nguồn vốn để:
+mua đất,
+xây dựng dự án,
+thuê lao động,
+mua nguyên vật liệu.
+Nếu dự án thành công:
+Alpha Corp bán được căn hộ.
+Thu được lợi nhuận.
+Dùng một phần lợi nhuận để trả lãi ngân hàng.
+Tuy nhiên khi thị trường đóng băng:
+Không bán được sản phẩm.
+Không tạo ra dòng tiền.
+Không có khả năng trả lãi.
+Điều này khiến quá trình tuần hoàn tư bản bị gián đoạn.
+Kết luận
+Trong trường hợp Alpha Corp, lợi tức ngân hàng chính là phần giá trị được trích ra từ lợi nhuận mà doanh nghiệp kỳ vọng tạo ra trong tương lai.
+3.3.3 Địa tô tư bản chủ nghĩa
+Lý thuyết
+Trong lĩnh vực đất đai, giá trị thặng dư có thể biểu hiện thành địa tô.
+Địa tô là phần giá trị mà nhà tư bản kinh doanh trên đất phải trả cho chủ sở hữu đất do quyền sở hữu đất.
+Đối với lĩnh vực bất động sản, đất đai trở thành một yếu tố đặc biệt vì:
+nguồn cung đất có giới hạn,
+vị trí đất tạo ra giá trị khác nhau,
+giá trị bất động sản phụ thuộc lớn vào quyền sử dụng đất.
+
+Áp dụng vào Alpha Corp
+Alpha Corp đầu tư vào khu đô thị ven biển.
+Giá trị dự án không chỉ đến từ:
+công sức xây dựng của công nhân,
+máy móc,
+nguyên vật liệu,
+mà còn đến từ:
+vị trí ven biển,
+quyền sử dụng đất,
+khả năng khai thác thương mại.
+Nếu dự án thành công:
+Giá bán căn hộ cao hơn nhiều so với chi phí xây dựng.
+Giá trị đất làm tăng khả năng thu lợi của doanh nghiệp.
+Kết luận
+Trong bất động sản, giá trị thặng dư có thể biểu hiện thông qua lợi ích thu được từ việc khai thác đất đai và vị trí dự án

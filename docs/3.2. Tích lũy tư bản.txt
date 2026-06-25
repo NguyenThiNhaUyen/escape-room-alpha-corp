@@ -1,0 +1,79 @@
+3.2. Tích lũy tư bản
+
+3.2.1. Bản chất của tích lũy tư bản
+
+Lý thuyết
+
+Tái sản xuất là quá trình sản xuất được lặp đi lặp lại liên tục. Tái sản xuất có hai loại:
+
+Tái sản xuất giản đơn: quá trình sản xuất lặp lại với quy mô như cũ, toàn bộ giá trị thặng dư được dùng cho tiêu dùng cá nhân. 
+
+Tái sản xuất mở rộng: quá trình sản xuất lặp lại với quy mô lớn hơn, trong đó nhà tư bản biến một phần giá trị thặng dư thành tư bản phụ thêm để tiếp tục đầu tư. 
+
+Vì vậy, tích lũy tư bản là quá trình biến một phần giá trị thặng dư thành tư bản phụ thêm nhằm mở rộng sản xuất. Nguồn gốc của tích lũy tư bản chính là giá trị thặng dư do người lao động tạo ra.
+
+Áp dụng vào Alphacorp
+
+Vay 10.000 tỷ đồng xây 3 tòa tháp để bán kiếm lời và tái đầu tư. 
+
+Tuy nhiên, thị trường đóng băng khiến hàng hóa không bán được → Tư bản bị kẹt ở hình thái hàng hóa → Không có tiền mặt để trả nợ, trả lương và tái sản xuất.
+
+Kết luận: Tích lũy tư bản chỉ thành công khi hàng hóa được tiêu thụ (giá trị thặng dư được thực hiện thành tiền).
+
+
+
+---
+
+3.2.2. Những nhân tố ảnh hưởng đến quy mô tích lũy tư bản
+
+Lý thuyết
+
+Quy mô tích lũy tư bản phụ thuộc vào khối lượng giá trị thặng dư. 
+
+Công thức:
+
+M = m’ × V
+
+Trong đó:
+
+M: là khối lượng giá trị thặng dư.
+m’:  là tỷ suất giá trị thặng dư.
+V: là tư bản khả biến, tức phần tư bản dùng để thuê lao động.
+
+Những nhân tố ảnh hưởng đến quy mô tích lũy gồm:
+
+Trình độ khai thác sức lao động.
+Năng suất lao động xã hội.
+Hiệu quả sử dụng máy móc, thiết bị.
+Đại lượng tư bản ứng trước.
+
+Áp dụng vào Alphacorp
+
+Ứng trước số vốn khổng lồ (10.000 tỷ đồng) để đầu tư quy mô lớn. Khi thị trường thuận lợi, vốn lớn mang lại lợi nhuận lớn; nhưng khi đóng băng, vốn vay lớn trở thành gánh nặng tài chính (lãi vay, chi phí cố định).
+
+Kết luận: Vốn ứng trước lớn là "con dao hai lưỡi", có thể thúc đẩy tích lũy nhanh nhưng cũng dễ đẩy doanh nghiệp vào khủng hoảng nếu bị ứ đọng.
+
+
+
+---
+
+3.2.3. Một số hệ quả của tích lũy tư bản
+
+Lý thuyết
+
+Tích lũy tư bản tạo ra một số hệ quả chính.
+
+Thứ nhất, tích lũy làm tăng cấu tạo hữu cơ của tư bản. Nghĩa là phần tư bản bất biến như máy móc, nhà xưởng, nguyên vật liệu tăng nhanh hơn phần tư bản khả biến dùng để thuê lao động.
+
+Thứ hai, tích lũy làm tăng tích tụ và tập trung tư bản. Doanh nghiệp có lợi nhuận sẽ tiếp tục mở rộng quy mô, hoặc mua bán, sáp nhập với doanh nghiệp khác để tăng sức mạnh thị trường.
+
+Thứ ba, tích lũy làm tăng chênh lệch giữa nhà tư bản và người lao động. Nhà tư bản ngày càng nắm nhiều tư liệu sản xuất và lợi nhuận, còn người lao động chủ yếu sống bằng tiền lương.
+
+Áp dụng (Alpha Corp):
+Huy động 10.000 tỷ đồng thể hiện tập trung tư bản cao.
+Vốn đổ vào đất đai, công trình thể hiện tư bản bất biến chiếm tỷ trọng lớn.
+Khi khủng hoảng, tài sản vẫn thuộc về doanh nghiệp nhưng công nhân bị nợ lương, thể hiện sự bấp bênh của lao động làm thuê.
+Kết luận: Tích lũy giúp mở rộng quy mô, nhưng nếu tắc nghẽn tiêu thụ sẽ gây ứ đọng vốn, đình trệ sản xuất và ảnh hưởng trực tiếp đến người lao động.
+
+
+

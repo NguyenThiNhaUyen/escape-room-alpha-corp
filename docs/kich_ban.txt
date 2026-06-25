@@ -1,0 +1,73 @@
+T → H … SX … H’ → T’
+
+T: Tiền
+H: Hàng hóa đầu vào, gồm tư liệu sản xuất + sức lao động
+SX: Quá trình sản xuất
+H’: Hàng hóa mới sau sản xuất, có chứa giá trị thặng dư
+T’: Tiền thu về sau khi bán hàng hóa, lớn hơn tiền ban đầu
+Escape Room: Giải cứu Alpha Corp
+Màn mở đầu
+Bạn là thành viên của nhóm phân tích khủng hoảng tài chính. Alpha Corp đang đứng trước nguy cơ đình trệ toàn bộ dự án khu đô thị ven biển. Tập đoàn đã vay ngân hàng 10.000 tỷ đồng để mua đất, thuê máy móc và nhân công xây dựng 3 tòa tháp. Tuy nhiên, thị trường bất động sản bất ngờ đóng băng, người dân không có tiền mua nhà, khiến các tòa tháp không bán được.
+Nhiệm vụ của bạn là đi qua từng phòng, phân tích quá trình vận động của tư bản và tìm ra điểm khiến Alpha Corp bị mắc kẹt.
+
+Phòng 1: Kho tiền 10.000 tỷ
+Alpha Corp bắt đầu dự án bằng khoản vay ngân hàng 10.000 tỷ đồng. Ở giai đoạn này, tư bản tồn tại dưới hình thái tiền tệ. Tiền chưa trực tiếp tạo ra giá trị thặng dư, nhưng nó là điểm khởi đầu để nhà tư bản mua tư liệu sản xuất và sức lao động.
+Theo công thức tuần hoàn tư bản, đây là giai đoạn:
+T
+Câu hỏi mở khóa:
+Alpha Corp ban đầu đang nắm giữ hình thái tư bản nào?
+A. Tư bản sản xuất
+B. Tư bản tiền tệ
+C. Tư bản hàng hóa
+D. Tư bản cố định
+Đáp án đúng: B. Tư bản tiền tệ.
+Giải thích: Vì Alpha Corp khởi đầu bằng tiền vay ngân hàng, nên vốn ban đầu tồn tại dưới hình thái tư bản tiền tệ.
+
+Phòng 2: Công trường sản xuất
+Sau khi có tiền, Alpha Corp dùng vốn để mua đất, thuê máy móc và thuê công nhân. Lúc này, tư bản tiền tệ được chuyển hóa thành các yếu tố phục vụ sản xuất.
+Theo C. Mác, nhà tư bản dùng tiền để mua tư liệu sản xuất và sức lao động. Khi các yếu tố này được đưa vào quá trình xây dựng, tư bản bước vào giai đoạn sản xuất.
+Giai đoạn này tương ứng với:
+T → H … SX
+Câu hỏi mở khóa:
+Alpha Corp đã dùng tiền vay để chuyển sang quá trình nào?
+A. Tích trữ tiền mặt
+B. Đầu tư chứng khoán
+C. Mua yếu tố sản xuất và tiến hành xây dựng
+D. Bán nhà cho người dân
+Đáp án đúng: C. Mua yếu tố sản xuất và tiến hành xây dựng.
+Giải thích: Alpha Corp dùng tiền để mua đất, thuê máy móc, thuê công nhân và tổ chức sản xuất, tức là chuyển tư bản tiền tệ thành tư bản sản xuất.
+
+Phòng 3: Tòa tháp H’
+Sau quá trình xây dựng, Alpha Corp đã hoàn thành phần thô của 3 tòa tháp. Lúc này, tư bản không còn chủ yếu tồn tại dưới dạng tiền nữa mà đã kết tinh trong sản phẩm bất động sản.
+Các tòa tháp này là hàng hóa được tạo ra sau quá trình sản xuất. Chúng chứa giá trị mới do lao động công nhân tạo ra và chứa phần giá trị thặng dư mà Alpha Corp kỳ vọng thu được khi bán căn hộ.
+Giai đoạn này tương ứng với:
+SX → H’
+Câu hỏi mở khóa:
+Sau khi xây xong phần thô 3 tòa tháp, tư bản của Alpha Corp chủ yếu tồn tại dưới hình thái nào?
+A. Tư bản tiền tệ
+B. Tư bản hàng hóa
+C. Tư bản cho vay
+D. Tư bản thương nghiệp
+Đáp án đúng: B. Tư bản hàng hóa.
+Giải thích: Các tòa tháp trở thành hàng hóa bất động sản chờ bán, nên tư bản của Alpha Corp lúc này chủ yếu nằm trong hình thái tư bản hàng hóa H’.
+
+Phòng 4: Thị trường đóng băng
+Theo lý thuyết, sau khi tạo ra hàng hóa H’, Alpha Corp phải bán được hàng hóa để thu về T’. T’ là số tiền thu về sau khi bán hàng hóa, trong đó có phần giá trị thặng dư.
+Tuy nhiên, thị trường bất động sản đóng băng. Người dân không có tiền mua nhà do tín dụng bị siết chặt và lãi suất tăng cao. Vì vậy, Alpha Corp không bán được các tòa tháp, không thu hồi được tiền và không có khả năng trả lãi ngân hàng.
+Điểm đứt gãy nằm ở giai đoạn:
+H’ → T’
+Câu hỏi mở khóa:
+Alpha Corp bị mắc kẹt ở khâu nào trong tuần hoàn tư bản?
+A. T → H
+B. H … SX
+C. SX → H’
+D. H’ → T’
+Đáp án đúng: D. H’ → T’.
+Giải thích: Alpha Corp đã có hàng hóa bất động sản nhưng không bán được, nên không thể biến hàng hóa thành tiền. Vì vậy, tư bản bị mắc kẹt ở hình thái hàng hóa.
+
+Phòng 5: Giải cứu Alpha Corp
+Qua các phòng trên, có thể kết luận rằng Alpha Corp bị mắc kẹt chủ yếu ở hình thái tư bản hàng hóa H’. Do không bán được bất động sản, doanh nghiệp không thể chuyển H’ thành T’. Điều này làm cho dòng tuần hoàn tư bản bị gián đoạn.
+Về điều kiện lưu thông, tư bản chỉ vận động bình thường khi nó liên tục chuyển hóa qua các giai đoạn: tiền tệ, sản xuất, hàng hóa và quay trở lại tiền tệ với giá trị lớn hơn. Nếu một khâu bị tắc, toàn bộ quá trình tuần hoàn sẽ bị đình trệ.
+Về mặt không gian, tư bản phải đồng thời tồn tại ở cả ba hình thái: tiền tệ, sản xuất và hàng hóa. Alpha Corp đã dồn quá nhiều vốn vào bất động sản, tức là vào tư bản hàng hóa, trong khi thiếu tiền mặt để trả nợ và duy trì hoạt động.
+Về mặt thời gian, tư bản phải liên tục chuyển hóa qua các giai đoạn. Nếu tư bản nằm quá lâu trong hàng hóa không bán được, nó sẽ bị đóng băng, không tạo ra giá trị thặng dư mới và khiến doanh nghiệp rơi vào khủng hoảng.
+Kết luận: Alpha Corp không thiếu tài sản, nhưng thiếu khả năng chuyển tài sản thành tiền. Đây là nguyên nhân khiến tư bản của họ bị mắc kẹt và quá trình tuần hoàn tư bản bị đứt gãy.
