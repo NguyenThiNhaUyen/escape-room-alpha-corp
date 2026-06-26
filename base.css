@@ -1,0 +1,115 @@
+/* ============================================================
+   index.css — Escape Room: Giải cứu Alpha Corp
+   Dark Escape Room Theme — Ưu tiên dễ đọc khi thuyết trình
+   ============================================================ */
+
+/* ===== 1. CSS Variables / Design Tokens ===== */
+:root {
+  /* Colors */
+  --bg-primary: #141210;
+  --bg-secondary: #1a1714;
+  --bg-card: rgba(22, 18, 14, 0.9);
+
+  --color-correct: #4a9e6b;
+  --color-incorrect: #c44b3f;
+  --color-accent: #d8aa46;
+  --color-accent-dim: rgba(216, 170, 70, 0.12);
+  --color-gold: #d8aa46;
+  --color-gold-dim: rgba(216, 170, 70, 0.12);
+  --color-purple: #a88d75;
+  --color-purple-dim: rgba(168, 141, 117, 0.12);
+
+  /* Button cam (orange CTAs) */
+  --color-btn-bg: #e67e22;
+  --color-btn-hover: #d35400;
+
+  --color-text: #ffffff;
+  --color-text-secondary: #ebdcd0;
+  --color-text-muted: #a6988a;
+
+  /* Typography & Fonts */
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Space Grotesk', 'Inter', sans-serif;
+  --font-code: 'JetBrains Mono', monospace;
+  --font-size-base: 18px;
+  --line-height: 1.7;
+
+  /* Typography Sizing Hierarchy */
+  --font-size-title: 2.67rem;      /* 48px at base 18px */
+  --font-size-subtitle: 1.44rem;   /* 26px at base 18px */
+  --font-size-body: 1rem;          /* 18px at base 18px */
+  --font-size-caption: 0.83rem;    /* 15px at base 18px */
+
+  /* Spacing & Layout */
+  --card-padding: 0px;
+  --card-radius: 0px;
+  --card-max-width: 900px;
+  --card-gap: 48px;
+  --section-padding: 40px 24px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* ===== 2. Base / Reset ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--font-size-base);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 500;
+  background-color: var(--bg-primary);
+  background:
+    linear-gradient(rgba(16, 14, 12, 0.76), rgba(16, 14, 12, 0.8)),
+    url('./background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--color-text);
+  line-height: var(--line-height);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+a { color: var(--color-accent); text-decoration: none; }
+img { max-width: 100%; }
+ul, ol { padding-left: 1.5em; }
+li { margin-bottom: 0.4em; }
+strong { color: #fff; }
+
+/* ===== 3. Layout Containers ===== */
+.screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--section-padding);
+  position: relative;
+  z-index: 1;
+}
+
+.screen.hidden {
+  display: none !important;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--card-max-width);
+  margin: 0 auto;
+}

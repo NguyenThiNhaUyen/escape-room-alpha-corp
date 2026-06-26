@@ -1,0 +1,98 @@
+/* ===== 17. Responsive ===== */
+@media (max-width: 768px) {
+  :root {
+    --font-size-base: 16px;
+    --card-padding: 20px 20px;
+    --card-max-width: 100%;
+    --section-padding: 24px 16px;
+    --card-gap: 16px;
+  }
+
+  .intro-title {
+    font-size: 2rem;
+  }
+
+  .intro-subtitle {
+    font-size: 1rem;
+  }
+
+  .room-title {
+    font-size: 1.3rem;
+  }
+
+  .formula-display {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+
+  .option-item {
+    padding: 14px 16px;
+    gap: 10px;
+  }
+
+  .btn-large {
+    padding: 14px 32px;
+    font-size: 0.85rem;
+  }
+
+  .ending-score-number {
+    font-size: 2.2rem;
+  }
+
+  .ending-title {
+    font-size: 1.8rem;
+  }
+
+  .card-header {
+    padding: 14px 20px;
+  }
+
+  .card-body {
+    padding: 0 20px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-base: 15px;
+  }
+
+  .intro-title {
+    font-size: 1.6rem;
+  }
+
+  .intro-formula-section {
+    padding: 20px;
+  }
+}
+
+
+/* ===== 28. New Feature Responsive ===== */
+@media (max-width: 480px) {
+  .minimap-node {
+    width: 22px;
+    height: 22px;
+    font-size: 0.5rem;
+  }
+  .minimap-connector {
+    width: 6px;
+  }
+  .formula-timeline-step {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+  }
+  .formula-timeline {
+    gap: 1px;
+    padding: 12px;
+  }
+  #intro-screen::after {
+    display: none;
+  }
+  .diagnosis-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .diagnosis-label {
+    width: auto;
+  }
+}

@@ -98,3 +98,15 @@ Intro → Room 1 → Room 2 → Room 3 → Room 4 → Room 5 → Room 6 → Room
 4. Không đổi nội dung lý thuyết nếu không có yêu cầu từ user.
 5. Sau mỗi lần implement hoặc sửa lỗi, **phải cập nhật PROGRESS.md**.
 6. Khi gặp vấn đề cần quyết định thiết kế, ghi vào PROGRESS.md phần Notes trước khi làm.
+
+---
+
+## File scope update - 2026-06-26
+
+User requested splitting long files logically. The project may now include these additional split files while still running by opening `index.html` directly:
+
+- CSS: `base.css`, `layout.css`, `effects.css`, `responsive.css`
+- JavaScript: `app-state.js`, `app-render.js`, `app-effects.js`, `app-game.js`
+
+`index.css` remains the stylesheet manifest via `@import`, and `app.js` remains the bootstrap entry script. `data.js` keeps the full room content in one place to avoid accidental content loss.
+

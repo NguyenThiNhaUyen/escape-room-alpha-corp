@@ -2,6 +2,32 @@
 
 ## Current status
 
+
+### Fix - 2026-06-26: Background visibility
+
+- [x] Reduced the normal background overlay from near-black `0.94` to `0.76-0.80` so `background.jpg` is visible again.
+- [x] Reduced Presentation Mode overlay to `0.82-0.86`, keeping text readable while preserving more of the image.
+- [x] Verified computed background styles in Chrome.
+
+
+### Fix - 2026-06-26: Background after CSS split
+
+- [x] Replaced CSS `@import` loading with direct stylesheet links in `index.html` to avoid local-file import/cache path issues.
+- [x] Normalized background references to `url('./background.jpg')` in `base.css` and `layout.css`.
+- [x] Verified computed style resolves to `file:///D:/ki8/mln122/background.jpg` in Chrome.
+
+
+### Update - 2026-06-26: Logical file split
+
+- [x] Split long JavaScript implementation into focused files: `app-state.js`, `app-render.js`, `app-effects.js`, `app-game.js`; kept `app.js` as bootstrap only.
+- [x] Split long CSS into focused files: `base.css`, `layout.css`, `effects.css`, `responsive.css`; kept `index.css` as the stylesheet manifest.
+- [x] Kept `index.html` runnable directly without npm/build tools.
+- [x] Kept `data.js` unchanged to protect full 10-room academic content.
+- [x] Verified JS syntax with `node --check`.
+- [x] Verified script load order with a minimal Node VM browser-like smoke test.
+
+**Notes**: File scope was expanded because the user explicitly requested logical splitting of long files. `index.css` now uses `@import`; `app.js` now only initializes the app.
+
 **Giai đoạn**: UI Improvements v6 — Tối ưu màn chiếu nâng cao & Kiểm tra kịch bản hoàn tất
 
 **Trạng thái**: Tối ưu hiển thị nâng cao cho máy chiếu thuyết trình (tăng độ đậm font chữ body lên 600 khi thuyết trình, đổi text phụ thành màu trắng tinh #ffffff và xám sáng #d9d0c3, làm đậm lớp phủ nền lên 0.96, tăng sáng các màu nhấn/công thức). Đã đối chiếu và xác nhận tích hợp đầy đủ 100% nội dung phân tích tuần hoàn (không gian, thời gian, lưu thông) từ kịch bản gốc vào Phòng 10 trong data.js. Giao diện dạng Block thoáng và Lucide Icons hoạt động tốt.
