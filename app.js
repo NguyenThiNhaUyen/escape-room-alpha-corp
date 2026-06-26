@@ -120,29 +120,27 @@
         </div>
         <div class="btn-center">
           <button class="btn btn-primary btn-large" data-action="start">
-            🚀 ${d.buttonText}
+            <i data-lucide="play" class="icon-inline"></i> ${d.buttonText}
           </button>
         </div>
       </div>
     `;
+    if (typeof lucide !== 'undefined') lucide.createIcons();
   }
 
   // ── Render: Room ───────────────────────────────────────────
   function renderRoom() {
     const room = ROOMS[state.currentRoomIndex];
     const roomNum = state.currentRoomIndex + 1;
-    const progress = (roomNum / ROOMS.length) * 100;
 
-    // Header
+    // Header with minimap
     roomHeader().innerHTML = `
       <div class="progress-section">
         <div class="progress-header">
-          <span class="progress-room-label">🔓 Phòng ${roomNum}</span>
+          <span class="progress-room-label"><i data-lucide="unlock" class="icon-inline"></i> Phòng ${roomNum}</span>
           <span class="progress-count">${roomNum} / ${ROOMS.length}</span>
         </div>
-        <div class="progress-bar-track">
-          <div class="progress-bar-fill" style="width: ${progress}%"></div>
-        </div>
+        ${buildMinimap()}
       </div>
       <div class="room-title-section">
         <h2 class="room-title">${room.title}</h2>
@@ -153,20 +151,14 @@
     // Content cards
     let html = '';
 
-    // Formula section if applicable
-    if (room.formula) {
-      html += `
-        <div class="formula-section" style="max-width:var(--card-max-width);margin:0 auto 24px;">
-          <div class="formula-display">${room.formula}</div>
-        </div>
-      `;
-    }
+    // Formula timeline — always visible
+    html += buildFormulaTimeline(state.currentRoomIndex);
 
     // Theory card
     html += buildCollapsibleCard(
       'theory',
       'card-theory',
-      '📖',
+      'book-open',
       room.theoryTitle,
       room.theoryContent,
       state.collapsedCards.theory
@@ -176,7 +168,7 @@
     html += buildCollapsibleCard(
       'case',
       'card-case',
-      '🏢',
+      'building-2',
       room.caseTitle,
       room.caseContent,
       state.collapsedCards.case
@@ -191,18 +183,22 @@
     }
 
     roomContent().innerHTML = html;
+    if (typeof lucide !== 'undefined') lucide.createIcons();
   }
 
   // ── Build collapsible card ─────────────────────────────────
   function buildCollapsibleCard(type, cssClass, icon, title, content, isCollapsed) {
     const collapsedClass = isCollapsed ? 'collapsed' : '';
-    const btnText = isCollapsed ? '▼ Mở rộng' : '▲ Thu gọn';
+    const btnText = isCollapsed 
+      ? '<i data-lucide="chevron-down" class="icon-inline"></i> Mở rộng' 
+      : '<i data-lucide="chevron-up" class="icon-inline"></i> Thu gọn';
+    const dossierLabel = (type === 'case') ? '<span class="dossier-label">Dossier</span>' : '';
     return `
       <div class="card ${cssClass} ${collapsedClass}" id="card-${type}">
         <div class="card-header">
           <div class="card-header-title">
-            <span class="card-header-icon">${icon}</span>
-            ${title}
+            <span class="card-header-icon"><i data-lucide="${icon}"></i></span>
+            ${title}${dossierLabel}
           </div>
           <button class="collapse-btn" data-action="collapse" data-card="${type}">${btnText}</button>
         </div>
@@ -245,7 +241,7 @@
     if (state.isAnswered && !state.isCorrect) {
       hintHTML = `
         <div class="hint-message incorrect">
-          ❌ Chưa đúng! Hãy đọc lại lý thuyết và thử lại.
+          <i data-lucide="alert-circle" class="icon-inline"></i> Chưa đúng! Hãy đọc lại lý thuyết và thử lại.
         </div>
       `;
     }
@@ -257,7 +253,7 @@
       <div class="card card-question">
         <div class="card-header">
           <div class="card-header-title">
-            <span class="card-header-icon">🔑</span>
+            <span class="card-header-icon"><i data-lucide="key"></i></span>
             Câu hỏi mở khóa
           </div>
         </div>
@@ -268,7 +264,7 @@
           ${!state.isCorrect ? `
             <div class="btn-center">
               <button class="btn btn-check" data-action="check" ${checkDisabled}>
-                🔍 Kiểm tra đáp án
+                <i data-lucide="check-square" class="icon-inline"></i> Kiểm tra đáp án
               </button>
             </div>
           ` : ''}
@@ -280,16 +276,20 @@
   // ── Build result card (correct) ────────────────────────────
   function buildResultCardCorrect(room) {
     const isLast = state.currentRoomIndex === ROOMS.length - 1;
-    const nextBtnText = isLast ? '🏆 Xem kết quả' : '→ Sang phòng tiếp theo';
+    const nextBtnText = isLast 
+      ? '<i data-lucide="trophy" class="icon-inline"></i> Xem kết quả' 
+      : '<i data-lucide="unlock" class="icon-inline"></i> Mở khóa phòng tiếp theo';
+    const roomLabel = 'Phòng ' + (state.currentRoomIndex + 1);
     return `
       <div class="card card-result correct">
         <div class="card-header">
           <div class="card-header-title">
-            <span class="card-header-icon">✅</span>
+            <span class="card-header-icon"><i data-lucide="check-circle-2"></i></span>
             Chính xác!
           </div>
         </div>
         <div class="card-body">
+          <div class="key-acquired"><i data-lucide="key" class="icon-inline"></i> Key Acquired — ${roomLabel}</div>
           <p>${room.explanation}</p>
           <div class="btn-center mt-2">
             <button class="btn btn-success btn-large" data-action="next">
@@ -299,6 +299,132 @@
         </div>
       </div>
     `;
+  }
+
+  // ── Build minimap ─────────────────────────────────────────
+  function buildMinimap() {
+    var html = '<div class="minimap">';
+    for (var i = 0; i < ROOMS.length; i++) {
+      if (i > 0) {
+        var connClass = (i <= state.currentRoomIndex) ? ' completed' : '';
+        html += '<div class="minimap-connector' + connClass + '"></div>';
+      }
+      var nodeClass = 'minimap-node';
+      if (i < state.currentRoomIndex) nodeClass += ' completed';
+      else if (i === state.currentRoomIndex) nodeClass += ' current';
+      else nodeClass += ' locked';
+      html += '<div class="' + nodeClass + '">' + (i + 1) + '</div>';
+    }
+    html += '</div>';
+    return html;
+  }
+
+  // ── Build formula timeline ────────────────────────────────
+  function buildFormulaTimeline(roomIndex) {
+    var segments = [
+      { label: 'T',  type: 'step' },
+      { label: '→',  type: 'arrow' },
+      { label: 'H',  type: 'step' },
+      { label: '…',  type: 'arrow' },
+      { label: 'SX', type: 'step' },
+      { label: '…',  type: 'arrow' },
+      { label: "H'", type: 'step' },
+      { label: '→',  type: 'arrow' },
+      { label: "T'", type: 'step' }
+    ];
+
+    // Which indices are highlighted per room
+    var activeMap = [
+      [0,1,2],         // Room 1: T → H
+      [0,1,2],         // Room 2: T → H
+      [0,1,2,3,4],     // Room 3: T → H … SX
+      [4],             // Room 4: SX
+      [4],             // Room 5: SX
+      [4,5,6],         // Room 6: SX … H'
+      [6],             // Room 7: H'
+      [6],             // Room 8: H'
+      [6],             // Room 9: H'
+      [6,7,8]          // Room 10: H' → T' (danger)
+    ];
+
+    var isDanger = (roomIndex === 9);
+    var active = activeMap[roomIndex] || [];
+
+    var html = '<div class="formula-timeline">';
+    for (var i = 0; i < segments.length; i++) {
+      var seg = segments[i];
+      var isActive = active.indexOf(i) !== -1;
+      if (seg.type === 'arrow') {
+        var arrowCls = 'formula-timeline-arrow';
+        if (isActive) arrowCls += isDanger ? ' danger' : ' active';
+        html += '<span class="' + arrowCls + '">' + seg.label + '</span>';
+      } else {
+        var stepCls = 'formula-timeline-step';
+        if (isActive) {
+          stepCls += isDanger ? ' danger' : ' active';
+        } else {
+          stepCls += ' dim';
+        }
+        html += '<span class="' + stepCls + '">' + seg.label + '</span>';
+      }
+    }
+    html += '</div>';
+    return html;
+  }
+
+  // ── Play door transition (GSAP) ───────────────────────────
+  function playDoorTransition(onDone) {
+    var overlay = document.getElementById('door-transition');
+    if (!overlay || typeof gsap === 'undefined') {
+      onDone();
+      return;
+    }
+
+    var isPres = state.isPresentationMode;
+    var totalDur = isPres ? 0.65 : 1.1;
+
+    overlay.classList.remove('hidden');
+
+    var tl = gsap.timeline({
+      onComplete: function () {
+        overlay.classList.add('hidden');
+        gsap.set([overlay, '.door-left', '.door-right', '.door-lock', '.lock-ring', '.lock-text'], { clearProps: 'all' });
+        onDone();
+      }
+    });
+
+    tl.set('.door-left', { xPercent: 0 })
+      .set('.door-right', { xPercent: 0 })
+      .set('.door-lock', { opacity: 0, scale: 0.6 })
+      .set('.lock-text', { opacity: 0 })
+      .to('.door-lock', {
+        opacity: 1, scale: 1,
+        duration: 0.2,
+        ease: 'back.out(1.7)'
+      }, 0.1)
+      .to('.lock-ring', {
+        rotation: 360,
+        duration: isPres ? 0.3 : 0.5,
+        ease: 'power2.inOut'
+      }, 0.15)
+      .to('.lock-text', {
+        opacity: 1,
+        duration: 0.15
+      }, isPres ? 0.3 : 0.4)
+      .to('.door-lock', {
+        opacity: 0,
+        duration: 0.12
+      }, totalDur - 0.4)
+      .to('.door-left', {
+        xPercent: -100,
+        duration: 0.4,
+        ease: 'power3.in'
+      }, totalDur - 0.4)
+      .to('.door-right', {
+        xPercent: 100,
+        duration: 0.4,
+        ease: 'power3.in'
+      }, totalDur - 0.4);
   }
 
   // ── Select answer ──────────────────────────────────────────
@@ -354,14 +480,17 @@
 
   // ── Next room ──────────────────────────────────────────────
   function nextRoom() {
-    if (state.currentRoomIndex >= ROOMS.length - 1) {
-      goToEnding();
-      return;
-    }
-    state.currentRoomIndex++;
-    resetRoomState();
-    render();
-    scrollToTop();
+    var isLast = state.currentRoomIndex >= ROOMS.length - 1;
+    playDoorTransition(function () {
+      if (isLast) {
+        goToEnding();
+        return;
+      }
+      state.currentRoomIndex++;
+      resetRoomState();
+      render();
+      scrollToTop();
+    });
   }
 
   // ── Go to ending ───────────────────────────────────────────
@@ -454,7 +583,7 @@
     const d = ENDING_DATA;
     endingScreen().innerHTML = `
       <div class="container" style="max-width:700px;">
-        <div class="ending-trophy">🏆</div>
+        <div class="ending-trophy"><i data-lucide="trophy" style="width:64px;height:64px;color:var(--color-gold);"></i></div>
         <h1 class="ending-title">${d.title}</h1>
         <div class="ending-score">
           <div class="ending-score-number">${state.score}/${ROOMS.length}</div>
@@ -465,16 +594,32 @@
           <div class="formula-display">${d.formula}</div>
           ${d.analysis}
         </div>
+        <div class="diagnosis-panel">
+          <div class="diagnosis-header"><i data-lucide="activity" class="icon-inline"></i> Diagnosis Report</div>
+          <div class="diagnosis-row">
+            <div class="diagnosis-label">Điểm mắc kẹt</div>
+            <div class="diagnosis-value danger">H' → T'</div>
+          </div>
+          <div class="diagnosis-row">
+            <div class="diagnosis-label">Nguyên nhân</div>
+            <div class="diagnosis-value">Không bán được hàng hóa bất động sản</div>
+          </div>
+          <div class="diagnosis-row">
+            <div class="diagnosis-label">Kết luận</div>
+            <div class="diagnosis-value">Giá trị thặng dư chưa hiện thực hóa thành tiền</div>
+          </div>
+        </div>
         <div class="ending-conclusion">
           ${d.conclusion}
         </div>
         <div class="btn-center">
           <button class="btn btn-restart btn-large" data-action="restart">
-            🔄 Chơi lại
+            <i data-lucide="refresh-cw" class="icon-inline"></i> Chơi lại
           </button>
         </div>
       </div>
     `;
+    if (typeof lucide !== 'undefined') lucide.createIcons();
   }
 
   // ── Scroll ─────────────────────────────────────────────────
@@ -548,7 +693,7 @@
 
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(0, 229, 255, ${p.opacity})`;
+      ctx.fillStyle = `rgba(196, 154, 60, ${p.opacity})`;
       ctx.fill();
     }
 

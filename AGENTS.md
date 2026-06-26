@@ -10,10 +10,11 @@ Web gồm 10 phòng + màn mở đầu + màn kết thúc. Mỗi phòng có: lý
 
 ## Tech scope
 
-- **Ngôn ngữ**: HTML + CSS + JavaScript thuần
-- **Framework / thư viện**: KHÔNG dùng. Không React, không Tailwind, không jQuery, không thư viện bên ngoài nào
+- **Ngôn ngữ**: HTML + CSS + JavaScript
+- **Framework**: KHÔNG dùng framework SPA (React, Vue, Angular...)
 - **Build tool**: KHÔNG cần. Không npm, không Vite, không Webpack
-- **External resource**: Chỉ Google Fonts (Inter + Orbitron) qua CDN link
+- **Thư viện nhỏ qua CDN**: Cho phép nếu phục vụ animation/UX (ví dụ: GSAP)
+- **External resource**: Google Fonts (Inter + Orbitron) qua CDN link
 - **Cách chạy**: Mở `index.html` trực tiếp trong trình duyệt là hoạt động
 
 ---

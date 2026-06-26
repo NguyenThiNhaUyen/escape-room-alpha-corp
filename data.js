@@ -345,32 +345,22 @@ const ROOMS = [
     title: "Điểm mắc kẹt của Alpha Corp trong tuần hoàn tư bản",
     objective: "Giúp người chơi tổng hợp toàn bộ vấn đề và xác định Alpha Corp bị mắc kẹt ở giai đoạn H' → T'.",
     theoryTitle: "Lý thuyết thuyết trình",
-    theoryContent: `<p>Tư bản chỉ vận động bình thường khi nó liên tục chuyển hóa qua các hình thái:</p>
-<p>Tư bản tiền tệ → tư bản sản xuất → tư bản hàng hóa → tư bản tiền tệ lớn hơn ban đầu.</p>
+    theoryContent: `<p>Tư bản chỉ vận động bình thường khi nó liên tục chuyển hóa qua các hình thái: Tư bản tiền tệ → Tư bản sản xuất → Tư bản hàng hóa → Tư bản tiền tệ lớn hơn ban đầu.</p>
 <p><strong>Công thức đầy đủ:</strong></p>
 <p class="formula-highlight">T → H … SX … H' → T'</p>
-<p>Trong đó:</p>
+<p><strong>Điều kiện để tuần hoàn tư bản diễn ra bình thường:</strong></p>
 <ul>
-<li><strong>T</strong> là tiền ban đầu.</li>
-<li><strong>H</strong> là hàng hóa đầu vào.</li>
-<li><strong>SX</strong> là quá trình sản xuất.</li>
-<li><strong>H'</strong> là hàng hóa mới có chứa giá trị thặng dư.</li>
-<li><strong>T'</strong> là tiền thu về sau khi bán hàng hóa.</li>
-</ul>
-<p>Nếu hàng hóa H' không bán được, tư bản bị mắc kẹt ở hình thái hàng hóa. Khi đó, doanh nghiệp có tài sản nhưng thiếu tiền mặt, không thu hồi được vốn, không trả được nợ và không thể tiếp tục chu kỳ sản xuất mới.</p>
-<p>Giá trị thặng dư chỉ thật sự trở thành lợi nhuận khi hàng hóa được bán thành công trên thị trường.</p>`,
+<li><strong>Về điều kiện lưu thông:</strong> Tư bản chỉ vận động bình thường khi nó liên tục chuyển hóa qua các giai đoạn: tiền tệ, sản xuất, hàng hóa và quay trở lại tiền tệ với giá trị lớn hơn. Nếu một khâu bị tắc, toàn bộ quá trình tuần hoàn sẽ bị đình trệ.</li>
+<li><strong>Về mặt không gian:</strong> Tư bản phải đồng thời tồn tại ở cả ba hình thái: tiền tệ, sản xuất và hàng hóa. Nếu dồn quá nhiều vốn vào một hình thái và thiếu hụt các hình thái khác, doanh nghiệp sẽ mất cân đối.</li>
+<li><strong>Về mặt thời gian:</strong> Tư bản phải liên tục chuyển hóa qua các giai đoạn. Nếu tư bản nằm quá lâu ở một giai đoạn (như hàng hóa không bán được), nó sẽ bị đóng băng và không tạo ra giá trị thặng dư mới.</li>
+</ul>`,
     caseTitle: "Áp dụng vào Alpha Corp",
-    caseContent: `<p>Alpha Corp đã đi qua các giai đoạn:</p>
+    caseContent: `<p>Qua các phòng trên, có thể kết luận rằng Alpha Corp bị mắc kẹt chủ yếu ở hình thái tư bản hàng hóa <strong>H’</strong>. Do không bán được bất động sản, doanh nghiệp không thể chuyển H’ thành T’. Điều này làm cho dòng tuần hoàn tư bản bị gián đoạn.</p>
 <ul>
-<li><strong>T:</strong> Vay ngân hàng 10.000 tỷ đồng.</li>
-<li><strong>H:</strong> Dùng tiền mua đất, thuê máy móc, mua vật liệu và thuê công nhân.</li>
-<li><strong>SX:</strong> Tổ chức xây dựng 3 tòa tháp.</li>
-<li><strong>H':</strong> Tạo ra sản phẩm bất động sản là các tòa tháp, căn hộ chờ bán.</li>
+<li><strong>Về mặt không gian:</strong> Alpha Corp đã dồn quá nhiều vốn vào bất động sản, tức là vào tư bản hàng hóa H', trong khi thiếu tiền mặt T để trả nợ và duy trì hoạt động.</li>
+<li><strong>Về mặt thời gian:</strong> Do bất động sản đóng băng nằm quá lâu không bán được, tư bản của họ bị đóng băng, không tạo ra giá trị thặng dư mới và khiến doanh nghiệp rơi vào khủng hoảng tài chính trầm trọng.</li>
 </ul>
-<p>Tuy nhiên, Alpha Corp bị mắc kẹt ở giai đoạn:</p>
-<p class="formula-highlight text-danger">H' → T'</p>
-<p>Nguyên nhân là thị trường bất động sản đóng băng, người dân không có đủ khả năng mua nhà, tín dụng bị siết chặt và lãi suất tăng cao. Vì vậy, Alpha Corp không bán được căn hộ, không thu hồi được tiền và không có khả năng trả lãi ngân hàng.</p>
-<p><strong>Kết luận:</strong> Alpha Corp không thiếu tài sản, nhưng thiếu khả năng chuyển tài sản thành tiền. Đây là nguyên nhân khiến tư bản bị mắc kẹt và quá trình tuần hoàn tư bản bị đứt gãy.</p>`,
+<p><strong>Kết luận:</strong> Alpha Corp không thiếu tài sản, nhưng thiếu khả năng chuyển tài sản thành tiền. Đây là nguyên nhân khiến tư bản của họ bị mắc kẹt và quá trình tuần hoàn tư bản bị đứt gãy.</p>`,
     formula: "T → H … SX … H' → T'",
     question: "Alpha Corp bị mắc kẹt ở giai đoạn nào trong tuần hoàn tư bản?",
     options: [
