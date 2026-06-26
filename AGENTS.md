@@ -1,4 +1,4 @@
-# AGENTS.md — Escape Room: Giải cứu Alpha Corp
+# AGENTS.md — Escape Room: Giải mã Alpha Corp
 
 ## Mục tiêu project
 

@@ -1,11 +1,11 @@
 // ============================================================
-// data.js — Escape Room: Giải cứu Alpha Corp
+// data.js — Escape Room: Giải mã Alpha Corp
 // Dữ liệu 10 phòng + Intro + Ending
 // KHÔNG rút gọn nội dung. Giữ nguyên văn từ kịch bản.
 // ============================================================
 
 const INTRO_DATA = {
-  title: "Escape Room: Giải cứu Alpha Corp",
+  title: "Escape Room: Giải mã Alpha Corp",
   subtitle: "Chương 3: Giá trị thặng dư trong nền kinh tế thị trường",
   description: `<p>Bạn là thành viên của nhóm phân tích khủng hoảng tài chính. Alpha Corp đang đứng trước nguy cơ đình trệ toàn bộ dự án khu đô thị ven biển.</p>
 <p>Tập đoàn đã vay ngân hàng <strong>10.000 tỷ đồng</strong> để mua đất, thuê máy móc và công nhân xây dựng 3 tòa tháp. Tuy nhiên, thị trường bất động sản bất ngờ đóng băng. Người dân không có đủ khả năng mua nhà, khiến các tòa tháp không bán được.</p>
@@ -19,11 +19,11 @@ const INTRO_DATA = {
 <li><strong>T'</strong>: Tiền thu về sau khi bán hàng hóa, lớn hơn tiền ban đầu</li>
 </ul>
 <p>Nhà tư bản bắt đầu bằng tiền, dùng tiền để mua tư liệu sản xuất và sức lao động, đưa vào quá trình sản xuất để tạo ra hàng hóa mới. Sau đó, hàng hóa phải được bán ra thị trường để thu về số tiền lớn hơn ban đầu. Nếu một khâu bị tắc, toàn bộ quá trình tuần hoàn tư bản sẽ bị gián đoạn.</p>`,
-  buttonText: "Bắt đầu giải cứu"
+  buttonText: "Bắt đầu giải mã"
 };
 
 const ENDING_DATA = {
-  title: "Giải cứu hoàn tất",
+  title: "Giải mã hoàn tất",
   description: `<p>Bạn đã hoàn thành hành trình Escape Room và xác định được nguyên nhân Alpha Corp rơi vào khủng hoảng.</p>
 <p>Công thức tuần hoàn tư bản là:</p>`,
   formula: "T → H … SX … H' → T'",

@@ -1,36 +1,22 @@
-# PROGRESS.md — Escape Room: Giải cứu Alpha Corp
+# PROGRESS.md — Escape Room: Giải mã Alpha Corp
 
 ## Current status
 
+### Update - 2026-06-26: Academic & Scholarly UI Redesign
 
-### Fix - 2026-06-26: Background visibility
+- [x] Thay đổi lớp phủ hình nền thành dạng dải tròn (radial vignette gradient) để hướng sự tập trung của lớp học vào trung tâm và tạo chiều sâu trang nghiêm.
+- [x] Đóng hộp các `.card` thành dạng bảng chuyên đề (thêm màu nền xám than ấm, viền mảnh, bo góc 8px và đổ bóng nhẹ), khắc phục triệt để lỗi chữ đè lên ảnh nền.
+- [x] Đơn giản hóa các ô đáp án `.option-item`: loại bỏ hiệu ứng dịch chuyển ngang (translateX) gây cảm giác trò chơi lòe loẹt, chỉ giữ lại sự thay đổi màu viền tinh tế và chuyên nghiệp.
+- [x] Loại bỏ toàn bộ hiệu ứng phát sáng neon (glow) và chớp tắt lòe loẹt ở công thức (`.formula-display`, `.formula-inline`), trình bày công thức trong hộp phẳng phẳng sạch sẽ.
+- [x] Thiết kế lại Diagnosis Panel thành một bảng báo cáo khoa học thanh lịch với các đường kẻ mảnh và màu sắc trung tính trang nhã.
+- [x] Giảm tốc độ di chuyển hạt bụi bay ở nền xuống hệ số `0.1` để tạo cảm giác chậm rãi, tôn nghiêm như trong giảng đường đại học.
+- [x] Đồng bộ hóa hiệu ứng dải màu nền vignette cho cả chế độ thuyết trình (Presentation Mode).
+- [x] Kiểm tra cú pháp JavaScript thành công bằng `node --check`.
 
-- [x] Reduced the normal background overlay from near-black `0.94` to `0.76-0.80` so `background.jpg` is visible again.
-- [x] Reduced Presentation Mode overlay to `0.82-0.86`, keeping text readable while preserving more of the image.
-- [x] Verified computed background styles in Chrome.
+**Giai đoạn**: UI Improvements v7 — Tinh chỉnh phong cách học thuật tối giản & Trang nghiêm thuyết trình
 
+**Trạng thái**: Hoàn tất lột xác giao diện từ dạng phẳng trong suốt đơn điệu sang dạng các hộp bảng biểu giáo trình điện tử trang trọng, rõ chữ, tương phản cao, loại bỏ toàn bộ các chi tiết chớp nháy màu mè/gamey để phù hợp tuyệt đối cho bài thuyết trình môn Triết học/Kinh tế chính trị.
 
-### Fix - 2026-06-26: Background after CSS split
-
-- [x] Replaced CSS `@import` loading with direct stylesheet links in `index.html` to avoid local-file import/cache path issues.
-- [x] Normalized background references to `url('./background.jpg')` in `base.css` and `layout.css`.
-- [x] Verified computed style resolves to `file:///D:/ki8/mln122/background.jpg` in Chrome.
-
-
-### Update - 2026-06-26: Logical file split
-
-- [x] Split long JavaScript implementation into focused files: `app-state.js`, `app-render.js`, `app-effects.js`, `app-game.js`; kept `app.js` as bootstrap only.
-- [x] Split long CSS into focused files: `base.css`, `layout.css`, `effects.css`, `responsive.css`; kept `index.css` as the stylesheet manifest.
-- [x] Kept `index.html` runnable directly without npm/build tools.
-- [x] Kept `data.js` unchanged to protect full 10-room academic content.
-- [x] Verified JS syntax with `node --check`.
-- [x] Verified script load order with a minimal Node VM browser-like smoke test.
-
-**Notes**: File scope was expanded because the user explicitly requested logical splitting of long files. `index.css` now uses `@import`; `app.js` now only initializes the app.
-
-**Giai đoạn**: UI Improvements v6 — Tối ưu màn chiếu nâng cao & Kiểm tra kịch bản hoàn tất
-
-**Trạng thái**: Tối ưu hiển thị nâng cao cho máy chiếu thuyết trình (tăng độ đậm font chữ body lên 600 khi thuyết trình, đổi text phụ thành màu trắng tinh #ffffff và xám sáng #d9d0c3, làm đậm lớp phủ nền lên 0.96, tăng sáng các màu nhấn/công thức). Đã đối chiếu và xác nhận tích hợp đầy đủ 100% nội dung phân tích tuần hoàn (không gian, thời gian, lưu thông) từ kịch bản gốc vào Phòng 10 trong data.js. Giao diện dạng Block thoáng và Lucide Icons hoạt động tốt.
 
 ---
 
@@ -85,7 +71,7 @@
 |---|---|---|
 | 1 | Mở `index.html` chạy được trực tiếp trong browser | ☐ |
 | 2 | Màn mở đầu hiển thị đúng + có silhouette 3 tòa tháp nhẹ ở nền | ☐ |
-| 3 | Bấm "Bắt đầu giải cứu" chuyển sang Phòng 1 | ☐ |
+| 3 | Bấm "Bắt đầu giải mã" chuyển sang Phòng 1 | ☐ |
 | 4 | Mini Map hiển thị: node 1 amber, nodes 2-10 xám | ☐ |
 | 5 | Formula Timeline hiển thị: T → H sáng amber (phòng 1-2) | ☐ |
 | 6 | Card Alpha Corp có nhãn "DOSSIER" ở header | ☐ |

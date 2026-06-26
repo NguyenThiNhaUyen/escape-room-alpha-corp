@@ -1,5 +1,5 @@
 /* ============================================================
-   index.css — Escape Room: Giải cứu Alpha Corp
+   index.css — Escape Room: Giải mã Alpha Corp
    Dark Escape Room Theme — Ưu tiên dễ đọc khi thuyết trình
    ============================================================ */
 
@@ -8,7 +8,7 @@
   /* Colors */
   --bg-primary: #141210;
   --bg-secondary: #1a1714;
-  --bg-card: rgba(22, 18, 14, 0.9);
+  --bg-card: rgba(26, 24, 22, 0.95);
 
   --color-correct: #4a9e6b;
   --color-incorrect: #c44b3f;
@@ -35,16 +35,20 @@
   --line-height: 1.7;
 
   /* Typography Sizing Hierarchy */
-  --font-size-title: 2.67rem;      /* 48px at base 18px */
-  --font-size-subtitle: 1.44rem;   /* 26px at base 18px */
-  --font-size-body: 1rem;          /* 18px at base 18px */
-  --font-size-caption: 0.83rem;    /* 15px at base 18px */
+  --font-size-title: 2.67rem;
+  /* 48px at base 18px */
+  --font-size-subtitle: 1.44rem;
+  /* 26px at base 18px */
+  --font-size-body: 1rem;
+  /* 18px at base 18px */
+  --font-size-caption: 0.83rem;
+  /* 15px at base 18px */
 
   /* Spacing & Layout */
-  --card-padding: 0px;
-  --card-radius: 0px;
+  --card-padding: 24px 28px;
+  --card-radius: 8px;
   --card-max-width: 900px;
-  --card-gap: 48px;
+  --card-gap: 40px;
   --section-padding: 40px 24px;
 
   /* Transitions */
@@ -54,7 +58,9 @@
 }
 
 /* ===== 2. Base / Reset ===== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -70,7 +76,7 @@ body {
   font-weight: 500;
   background-color: var(--bg-primary);
   background:
-    linear-gradient(rgba(16, 14, 12, 0.76), rgba(16, 14, 12, 0.8)),
+    radial-gradient(circle at center, rgba(20, 18, 16, 0.65) 0%, rgba(10, 8, 7, 0.95) 100%),
     url('./background.jpg') no-repeat center center fixed;
   background-size: cover;
   color: var(--color-text);
@@ -81,17 +87,36 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.3;
 }
 
-a { color: var(--color-accent); text-decoration: none; }
-img { max-width: 100%; }
-ul, ol { padding-left: 1.5em; }
-li { margin-bottom: 0.4em; }
-strong { color: #fff; }
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+ol {
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.4em;
+}
+
+strong {
+  color: #fff;
+}
 
 /* ===== 3. Layout Containers ===== */
 .screen {

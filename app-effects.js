@@ -96,8 +96,8 @@ function createParticles() {
       x: Math.random() * (canvas ? canvas.width : window.innerWidth),
       y: Math.random() * (canvas ? canvas.height : window.innerHeight),
       radius: Math.random() * 2 + 0.5,
-      speedX: (Math.random() - 0.5) * 0.4,
-      speedY: (Math.random() - 0.5) * 0.4,
+      speedX: (Math.random() - 0.5) * 0.1,
+      speedY: (Math.random() - 0.5) * 0.1,
       opacity: Math.random() * 0.3 + 0.1
     });
   }
