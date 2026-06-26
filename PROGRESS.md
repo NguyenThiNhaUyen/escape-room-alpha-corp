@@ -7,6 +7,7 @@
 - [x] Thay đổi lớp phủ hình nền thành dạng dải tròn (radial vignette gradient) để hướng sự tập trung của lớp học vào trung tâm và tạo chiều sâu trang nghiêm.
 - [x] Đóng hộp các `.card` thành dạng bảng chuyên đề (thêm màu nền xám than ấm, viền mảnh, bo góc 8px và đổ bóng nhẹ), khắc phục triệt để lỗi chữ đè lên ảnh nền.
 - [x] Đơn giản hóa các ô đáp án `.option-item`: loại bỏ hiệu ứng dịch chuyển ngang (translateX) gây cảm giác trò chơi lòe loẹt, chỉ giữ lại sự thay đổi màu viền tinh tế và chuyên nghiệp.
+- [x] Tối ưu hóa hàm `selectAnswer` và `handleIncorrect` trong `app-game.js`: thay vì vẽ lại toàn bộ phòng học (renderRoom) khi chọn đáp án hoặc khi chọn sai (gây Reflow giật/lệch màn hình), giờ đây ứng dụng thực hiện cập nhật trực tiếp trong DOM. Khi trả lời sai, ô đáp án sẽ chuyển đỏ, nút bấm kiểm tra bị khóa và dòng chữ cảnh báo "Chưa đúng!..." sẽ lắc nhẹ (shake) hiển thị mượt mà tại chỗ, không làm dịch chuyển vị trí trang.
 - [x] Loại bỏ toàn bộ hiệu ứng phát sáng neon (glow) và chớp tắt lòe loẹt ở công thức (`.formula-display`, `.formula-inline`), trình bày công thức trong hộp phẳng phẳng sạch sẽ.
 - [x] Thiết kế lại Diagnosis Panel thành một bảng báo cáo khoa học thanh lịch với các đường kẻ mảnh và màu sắc trung tính trang nhã.
 - [x] Giảm tốc độ di chuyển hạt bụi bay ở nền xuống hệ số `0.1` để tạo cảm giác chậm rãi, tôn nghiêm như trong giảng đường đại học.

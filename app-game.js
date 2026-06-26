@@ -45,7 +45,28 @@ function selectAnswer(index) {
 
   state.selectedAnswer = index;
   state.isAnswered = false;
-  renderRoom();
+
+  // Direct DOM update instead of full renderRoom() to prevent screen jittering
+  const options = document.querySelectorAll('.options-list .option-item');
+  options.forEach(function (opt, i) {
+    if (i === index) {
+      opt.classList.add('selected');
+    } else {
+      opt.classList.remove('selected');
+    }
+  });
+
+  // Enable the Check Answer button
+  const checkBtn = document.querySelector('button[data-action="check"]');
+  if (checkBtn) {
+    checkBtn.removeAttribute('disabled');
+  }
+
+  // Remove the previous hint message if present
+  const hintEl = document.querySelector('.hint-message');
+  if (hintEl) {
+    hintEl.remove();
+  }
 }
 
 // ── Check answer ───────────────────────────────────────────
@@ -81,12 +102,41 @@ function handleCorrect() {
 }
 
 function handleIncorrect() {
-  // Disable the wrong option
-  if (state.disabledOptions.indexOf(state.selectedAnswer) === -1) {
-    state.disabledOptions.push(state.selectedAnswer);
+  const selectedIdx = state.selectedAnswer;
+  if (selectedIdx === null) return;
+
+  // Disable the wrong option in state
+  if (state.disabledOptions.indexOf(selectedIdx) === -1) {
+    state.disabledOptions.push(selectedIdx);
   }
   state.selectedAnswer = null;
-  renderRoom();
+
+  // Update selected option in DOM
+  const selectedOpt = document.querySelector(`.options-list .option-item[data-option="${selectedIdx}"]`);
+  if (selectedOpt) {
+    selectedOpt.classList.remove('selected');
+    selectedOpt.classList.add('disabled', 'incorrect');
+    selectedOpt.removeAttribute('data-option');
+  }
+
+  // Disable the Check Answer button
+  const checkBtn = document.querySelector('button[data-action="check"]');
+  if (checkBtn) {
+    checkBtn.setAttribute('disabled', 'true');
+  }
+
+  // Create and append the hint message in DOM
+  let hintEl = document.querySelector('.hint-message');
+  if (!hintEl) {
+    const listEl = document.querySelector('.options-list');
+    if (listEl) {
+      hintEl = document.createElement('div');
+      hintEl.className = 'hint-message incorrect';
+      hintEl.innerHTML = '<i data-lucide="alert-circle" class="icon-inline"></i> Chưa đúng! Hãy đọc lại lý thuyết và thử lại.';
+      listEl.parentNode.insertBefore(hintEl, listEl.nextSibling);
+      if (typeof lucide !== 'undefined') lucide.createIcons();
+    }
+  }
 }
 
 // ── Next room ──────────────────────────────────────────────
